@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Настройте политику безопасности содержимого в метатеге ниже. Добавьте "unsafe-inline" к default-src, чтобы включить встроенный код JavaScript.
+        Дополнительные сведения см. по ссылке http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';img-src *; style-src 'self' 'unsafe-inline'; media-src *">-->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin="" />
+    <title>BlankCordovaApp1</title>
+</head>
+<body>
+    <div class="appMap" id="app">
+        <div id="map">Карта</div>
+        <!--<h1>Apache Cordova</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Подключение к устройству</p>
+            <p class="event received">Устройство готово</p>
+        </div>-->
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Для работы RequireJS в приложении Windows требуется атрибут "async". -->
+    <!--<script type="text/javascript" data-main="scripts/startup" src="lib/require.2.1.8.js" async></script>-->
+    <script src="scripts/platformOverrides.js" async></script>
+    <!--<script src="scripts/app.js" async></script>-->
+    <script src="scripts/bundle.js"></script>
+</body>
+</html>

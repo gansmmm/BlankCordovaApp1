@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "outDir": "www/scripts",
+    "module": "commonjs",
+    "target": "es5",
+    //"baseUrl": "./scripts",
+    
+    "jsx": "react"
+  },
+  "exclude": [ "platforms", "node_modules", "bower_components", "plugins", "merges", "res", "bin", "bld" ],
+  "include": [
+    "./scripts/**/*"
+  ]
+}
